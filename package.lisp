@@ -1,3 +1,3 @@
 (defpackage solipsism
   (:use #:common-lisp #:alexandria)
-  (:export #:seqsep))
+  (:export #:seqsep #:print-pretty-date))
