@@ -7,4 +7,5 @@
   :license "2-clause BSD"
   :depends-on (#:alexandria)
   :components ((:file "package")
-	       (:file "sequence" :depends-on ("package"))))
+	       (:file "sequence" :depends-on ("package"))
+	       (:file "time" :depends-on ("package"))))
