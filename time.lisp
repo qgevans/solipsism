@@ -10,7 +10,12 @@ of ~[World's End~;January~;February~;March~;April~;May~;June~;July~;August~;Sept
 ~2,'0D:~2,'0D:~2,'0D ~
 UTC~@D~@[ (DST active)~*~]"
 	      day-of-week
-	      day (second (multiple-value-list (truncate day 10)))
+	      day (if (and
+		       (/= day 11)
+		       (/= day 12)
+		       (/= day 13))
+		      (second (multiple-value-list (truncate day 10)))
+		      0)
 	      month
 	      year
 	      hours minutes seconds
