@@ -8,4 +8,5 @@
   :depends-on (#:alexandria)
   :components ((:file "package")
 	       (:file "sequence" :depends-on ("package"))
-	       (:file "time" :depends-on ("package"))))
+	       (:file "time" :depends-on ("package"))
+	       #+sb-thread (:file "queue" :depends-on ("package"))))
